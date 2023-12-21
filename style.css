@@ -1,0 +1,121 @@
+@import "meyer-reset.css";
+
+* {
+    box-sizing: border-box;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    width: 33%;
+    height: 100%;
+    background-image: url(images/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    padding-top: 14rem;
+    /* border: 5px solid orange; */
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    width: 67%;
+    height: 100%;
+    background-color: #f6f6f6;
+    /* border: 5px solid orange; */
+}
+
+.banner {
+    width: 100%;
+    height: 8rem;
+    background-color: aquamarine;
+    opacity: 0.5;
+}
+
+/* .form-container {
+    display: flex;
+    padding-right: 20%;
+} */
+
+.input-container {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: start;
+    justify-items: start;
+    column-gap: 0;
+    padding-right: 50%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.input-container label {
+    display: block;
+}
+
+.input-container input {
+    display: block;
+    width: 100%;
+}
+
+/* .form-container, .buttons, .info, form, .input-container {
+    border: 2px solid rgb(173, 114, 250);
+} */
+
+.info {
+    /* min-height: 34%;
+    padding-top: 20%; */
+    padding-left: 2.5rem;
+}
+
+.buttons {
+    /* min-height: auto; */
+    padding-left: 2.5rem;
+}
+
+
+button {
+    width: 10.2rem;
+    padding: 0.5rem;
+    background-color: rgb(173, 114, 250);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    /* margin-top: 3rem; */
+    padding: 1rem;
+    padding-left: 2.5rem;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.label {
+    font-size: 0.8rem;
+}
