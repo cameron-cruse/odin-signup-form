@@ -17,7 +17,8 @@ textarea {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 22px;
+    font-weight: 800;
 }
 
 .container {
@@ -89,6 +90,7 @@ h1 {
     /* min-height: 34%;
     padding-top: 20%; */
     padding-left: 2.5rem;
+    max-width: 70%;
 }
 
 .buttons {
@@ -96,16 +98,30 @@ h1 {
     padding-left: 2.5rem;
 }
 
+.buttons p {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    
+}
+
+.buttons p a {
+    color: #596D48;
+    text-decoration: none;
+
+}
+
 
 button {
     width: 10.2rem;
     padding: 0.5rem;
-    background-color: rgb(173, 114, 250);
+    background-color: #596D48;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 8px;
+    padding: 16px;
 }
 
 form {
