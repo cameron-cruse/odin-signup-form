@@ -10,20 +10,26 @@
   <body>
     <div class="container">
       <div class="left">
-        <div class="banner"></div>
+        <div class="banner">
+          <img src="images/odin-lined.png" alt="Odin" />
+          <h1>ODIN</h1>
+        </div>
+        <div class="credit">
+            Photo by <a href="https://unsplash.com/@joshuaearle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Halie West</a> on <a href="/s/photos/office?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </div>
       </div>
       <div class="right">
         <div class="info">
           <h1>
             This is not a real online service! You know you need something like
-            this in your life to help you realize your deepest dreams. <br> Sign up
-            now to get started.
+            this in your life to help you realize your deepest dreams. <br />
+            Sign up <em>now</em> to get started.
           </h1>
-          <br/>
-          <br/>
-          <h1>You know you want to.</h1>
+          <br />
+          <br />
+          <h1>You <em>know</em> you want to.</h1>
         </div>
-        <form>
+        <form action="https://httpbin.org/post" method="post" id="form">
           <h1 class="form-title">Let's do this!</h1>
           <div class="form-container">
             <section class="input-container">
@@ -31,37 +37,19 @@
                 <label for="firstName">
                   <span class="label">FIRST NAME</span>
                 </label>
-                <input
-                  type="text"
-                  id="firstName"
-                  name="firstName"
-                  placeholder="First Name"
-                  required
-                />
+                <input type="text" id="firstName" name="firstName" required />
               </p>
               <p>
                 <label for="lastName">
                   <span class="label">LAST NAME</span>
                 </label>
-                <input
-                  type="text"
-                  id="lastName"
-                  name="lastName"
-                  placeholder="Last Name"
-                  required
-                />
+                <input type="text" id="lastName" name="lastName" required />
               </p>
               <p>
                 <label for="email">
                   <span class="label">EMAIL</span>
                 </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Email"
-                  required
-                />
+                <input type="email" id="email" name="email" required />
               </p>
               <p>
                 <label for="phoneNumber">
@@ -71,7 +59,6 @@
                   type="tel"
                   id="phoneNumber"
                   name="phoneNumber"
-                  placeholder="Phone Number"
                   required
                 />
               </p>
@@ -79,13 +66,7 @@
                 <label for="password">
                   <span class="label">PASSWORD</span>
                 </label>
-                <input
-                  type="password"
-                  id="password"
-                  name="password"
-                  placeholder="Password"
-                  required
-                />
+                <input type="password" id="password" name="password" required />
               </p>
               <p>
                 <label for="confirmPassword">
@@ -95,7 +76,6 @@
                   type="password"
                   id="confirmPassword"
                   name="confirmPassword"
-                  placeholder="Confirm Password"
                   required
                 />
               </p>
@@ -108,7 +88,7 @@
           </div>
         </form>
         <div class="buttons">
-            <button type="submit">Create Account</button>
+          <button type="submit" form="form">Create Account</button>
           <p>Already have an account? <a href="#">Log In</a></p>
         </div>
       </div>

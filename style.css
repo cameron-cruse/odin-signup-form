@@ -1,4 +1,15 @@
 @import "meyer-reset.css";
+@font-face {
+    font-family: odin-font;
+    src: url(fonts/Norse-Bold.otf);
+}
+
+:root {
+    --page-font: Arial, Helvetica, sans-serif;
+    --color-white: white;
+    --color-green: #596D48;
+    --bg-color: #f9fafb;
+}
 
 * {
     box-sizing: border-box;
@@ -33,8 +44,8 @@ h1 {
     height: 100%;
     background-image: url(images/halie-west-25xggax4bSA-unsplash.jpg);
     background-size: cover;
-    padding-top: 14rem;
-    /* border: 5px solid orange; */
+    padding-top: 10rem;
+    position: relative;
 }
 
 .right {
@@ -44,21 +55,31 @@ h1 {
     gap: 2rem;
     width: 67%;
     height: 100%;
-    background-color: #f6f6f6;
-    /* border: 5px solid orange; */
+    background-color: var(--bg-color);
 }
 
 .banner {
     width: 100%;
     height: 8rem;
-    background-color: aquamarine;
-    opacity: 0.5;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
 }
 
-/* .form-container {
-    display: flex;
-    padding-right: 20%;
-} */
+.banner h1 {
+    color: var(--color-white);
+    font-size: 6.5rem;
+    font-weight: 800;
+    font-family: odin-font;
+    position: relative;
+    top: 0.9rem;
+}
+
+.banner img {
+    height: 100%;
+}
 
 .input-container {
     display: grid;
@@ -73,28 +94,31 @@ h1 {
     gap: 1rem;
 }
 
-.input-container label {
+.input-container .label {
     display: block;
+    font-size: 0.6rem;
+    letter-spacing: 0.1rem;
+    font-family: var(--page-font);
+    font-weight: 700;
+    margin-bottom: 3px;
 }
 
 .input-container input {
     display: block;
     width: 100%;
+    height: 1.6rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 14px 16px;
 }
 
-/* .form-container, .buttons, .info, form, .input-container {
-    border: 2px solid rgb(173, 114, 250);
-} */
-
 .info {
-    /* min-height: 34%;
-    padding-top: 20%; */
     padding-left: 2.5rem;
     max-width: 70%;
 }
 
 .buttons {
-    /* min-height: auto; */
     padding-left: 2.5rem;
 }
 
@@ -105,16 +129,15 @@ h1 {
 }
 
 .buttons p a {
-    color: #596D48;
+    color: var(--color-green);
     text-decoration: none;
 
 }
 
-
 button {
     width: 10.2rem;
     padding: 0.5rem;
-    background-color: #596D48;
+    background-color: var(--color-green);
     color: white;
     border: none;
     border-radius: 5px;
@@ -125,13 +148,27 @@ button {
 }
 
 form {
-    /* margin-top: 3rem; */
     padding: 1rem;
     padding-left: 2.5rem;
-    background-color: white;
+    background-color: var(--color-white);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .label {
     font-size: 0.8rem;
+}
+
+.credit {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--color-white);
+}
+
+.credit a {
+    color: var(--color-white);
+    text-decoration: none;
 }
